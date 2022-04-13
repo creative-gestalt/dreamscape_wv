@@ -31,10 +31,11 @@ class _DreamscapeState extends State<DreamscapePage> {
     double _statusBarHeight  = MediaQuery.of(context).padding.top;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding: EdgeInsets.only(top: _statusBarHeight),
         child: const WebView(
-          initialUrl: 'http://192.168.1.250:8081/dreams',
+          initialUrl: 'http://192.168.1.156:8081/dreams',
           javascriptMode: JavascriptMode.unrestricted,
         ),
       ),
